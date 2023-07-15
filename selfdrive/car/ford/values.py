@@ -81,6 +81,7 @@ CAR_INFO: Dict[str, Union[CarInfo, List[CarInfo]]] = {
   CAR.BRONCO_SPORT_MK1: FordCarInfo("Ford Bronco Sport 2021-22"),
   CAR.ESCAPE_MK4: [
     FordCarInfo("Ford Escape 2020-22"),
+    FordCarInfo("Ford Escape Plug-in Hybrid 2020-22"),
     FordCarInfo("Ford Kuga 2020-22", "Adaptive Cruise Control with Lane Centering"),
   ],
   CAR.EXPLORER_MK6: [
