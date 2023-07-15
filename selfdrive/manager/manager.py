@@ -140,6 +140,8 @@ def manager_thread() -> None:
   if os.getenv("NOBOARD") is not None:
     ignore.append("pandad")
 
+  ignore += ['dmonitoringmodeld', 'dmonitoringd', 'dpmonitoringd']
+  
   if not params.get_bool("dp_logging"):
     ignore += ["logcatd", "proclogd", "loggerd"]
   ignore += [x for x in os.getenv("BLOCK", "").split(",") if len(x) > 0]
